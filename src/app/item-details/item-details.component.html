@@ -8,7 +8,7 @@
         </div>
         <div class="price">
             <p [ngStyle]="{'text-decoration':product.discount ? 'line-through' : 'none'}">{{product.price | currency}}</p>
-            <p *ngIf="product.discount && product.discount.exact">{{product.discount.exact | currency}}</p>
+            <p *ngIf="product.discount && product.discount.exact">{{product.price - product.discount.exact | currency}}</p>
             <p *ngIf="product.discount && product.discount.percent">{{product.discount.percent/100 * product.price | currency}}</p>
             <button *ngIf="!isInCart(product)" (click)="addToCart(product)">Add To Cart</button>
             <div class="counter" *ngIf="isInCart(product)">

@@ -20,7 +20,7 @@ export class CartService {
     let subtotal = 0;
     if (typeof item.discount !== "undefined") {
       if (item.discount.exact) 
-        subtotal = subtotal + item.discount.exact*item.quantity
+        subtotal = subtotal + (item.price-item.discount.exact)*item.quantity
       if (item.discount.percent)
         subtotal += (item.discount.percent/100 * item.price)*item.quantity;
     }
@@ -63,7 +63,7 @@ export class CartService {
   checkStorage(item: Product) {
     if (item.quantity<1) {
       this.deleteProductFromStorage(item)
-    }
+    } 
   }
 
   deleteProductFromStorage(item: Product) {

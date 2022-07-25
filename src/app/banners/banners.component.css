@@ -1,0 +1,56 @@
+
+.slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+}
+
+.slideshow-container .slides {
+    display: none;
+    position: relative;
+    width: 800px;
+}
+
+.slideshow-container .slides.slide-active {
+    display: block;
+    width: 100%;
+    height: 200px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    color: #cecece;
+}
+
+.text {
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+.top-right {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+}
+

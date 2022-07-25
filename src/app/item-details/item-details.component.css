@@ -1,0 +1,65 @@
+.container {
+    text-align: center;
+    font-family: sans-serif;
+    height: 350px;
+    width: 350px;
+    margin: 50px auto;
+    border-radius: 7px;
+    box-shadow: 0 4px 4px #cecece;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    text-align: center;
+}
+
+.price button {
+    margin: 0 auto;
+    /* display: inline-block; */
+    border: none;
+    outline: 0;
+    padding: 12px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.price button:hover {
+    background-color: #cecece;
+}
+
+span {
+    cursor: pointer;
+}
+
+.counter {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.minus, .plus {
+    width: 20px;
+    height: 20px;
+    background: #f2f2f2;
+    border-radius: 7px;
+    border: 1px solid #ddd;
+    padding: 8px 5px 8px 5px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+input {
+    height: 34px;
+    width: 100px;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    display: inline-block;
+    vertical-align: middle;
+}
+

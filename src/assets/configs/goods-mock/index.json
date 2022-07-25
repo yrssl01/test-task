@@ -1,0 +1,38 @@
+[
+  {
+    "id": "100001",
+    "name": "bread",
+    "description": "<h3>Bread loaf</h3><p>Simple chunk of bread. Loaf. More like a slab.</p>",
+    "price": 20,
+    "image": "/assets/images/goodies/food-1.png"
+  },
+  {
+    "id": "240001",
+    "name": "cherries",
+    "description": "<h3>Cherry berries</h3><p>Red berries. Kinda juicy.</p>",
+    "price": 20,
+    "image": "/assets/images/goodies/food-2.png"
+  },
+  {
+    "id": "370008",
+    "name": "Cheese",
+    "description": "<h3>Piece of cheese</h3><p>Small piece of cheese. Not so cheesy, actually.</p>",
+    "price": 20,
+    "discount": {
+      "hint": "Cheese discount!",
+      "exact": 1
+    },
+    "image": "/assets/images/goodies/food-3.png"
+  },
+  {
+    "id": "905010",
+    "name": "Fruit",
+    "description": "<h3>Strange fruit</h3><p>Is it an apple? A pear?</p>",
+    "price": 40,
+    "discount": {
+      "hint": "Surprise yourself!",
+      "percent": 50
+    },
+    "image": "/assets/images/goodies/food-4.png"
+  }
+]

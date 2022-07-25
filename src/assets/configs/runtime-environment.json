@@ -1,0 +1,25 @@
+{
+  "production": false,
+  "banners": [
+    {
+      "path": "/assets/images/banners/banner-1.png",
+      "text": "1",
+      "zone": "bottom-right"
+    },
+    {
+      "path": "/assets/images/banners/banner-2.png",
+      "text": "2",
+      "zone": "bottom-right"
+    },
+    {
+      "path": "/assets/images/banners/banner-3.png",
+      "text": "3",
+      "zone": "bottom-right"
+    },
+    {
+      "path": "/assets/images/banners/banner-4.png",
+      "text": "4",
+      "zone": "top-right"
+    }
+  ]
+}

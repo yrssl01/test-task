@@ -1,0 +1,23 @@
+<div class="container" *ngIf="product">
+    <div class="image">
+        <img src="{{product.image}}" alt="">
+    </div>
+    <div class="info">
+        <div class="text">
+            <p [innerHTML]="product.description"></p>
+        </div>
+        <div class="price">
+            <p [ngStyle]="{'text-decoration':product.discount ? 'line-through' : 'none'}">{{product.price | currency}}</p>
+            <p *ngIf="product.discount && product.discount.exact">{{product.discount.exact | currency}}</p>
+            <p *ngIf="product.discount && product.discount.percent">{{product.discount.percent/100 * product.price | currency}}</p>
+            <button *ngIf="!isInCart(product)" (click)="addToCart(product)">Add To Cart</button>
+            <div class="counter" *ngIf="isInCart(product)">
+                <span class="minus" (click)="minus(product)">-</span>
+                <input type="number" [value]="quantity" readonly />
+                <span class="plus" (click)="plus(product)">+</span>
+            </div>
+        </div>
+    </div>
+    
+    
+</div>

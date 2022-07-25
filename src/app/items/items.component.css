@@ -1,0 +1,30 @@
+.container {
+    width: 70%;
+    margin: 50px auto;
+}
+
+.list {
+    text-align: center;
+    font-family: sans-serif;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
+}
+
+.list-item {
+    box-shadow: 0 4px 4px #cecece;
+}
+
+.list-item button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.list-item button:hover {
+    background-color: #cecece;
+}

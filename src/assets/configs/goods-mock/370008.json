@@ -1,0 +1,11 @@
+{
+  "id": "370008",
+  "name": "Cheese",
+  "description": "<h3>Piece of cheese</h3><p>Small piece of cheese. Not so cheesy, actually.</p>",
+  "price": 20,
+  "discount": {
+    "hint": "Cheese discount!",
+    "exact": 1
+  },
+  "image": "/assets/images/goodies/food-3.png"
+}

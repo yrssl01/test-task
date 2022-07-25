@@ -1,0 +1,7 @@
+{
+  "id": "100001",
+  "name": "bread",
+  "description": "<h3>Bread loaf</h3><p>Simple chunk of bread. Loaf. More like a slab.</p>",
+  "price": 20,
+  "image": "/assets/images/goodies/food-1.png"
+}

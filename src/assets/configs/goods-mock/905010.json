@@ -1,0 +1,11 @@
+{
+  "id": "905010",
+  "name": "Fruit",
+  "description": "<h3>Strange fruit</h3><p>Is it an apple? A pear?</p>",
+  "price": 40,
+  "discount": {
+    "hint": "Surprise yourself!",
+    "percent": 50
+  },
+  "image": "/assets/images/goodies/food-4.png"
+}

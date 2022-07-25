@@ -6,7 +6,7 @@
             <img src="{{product.image}}" alt=""></a>
             <p [ngStyle]="{'text-decoration':product.discount ? 'line-through' : 'none'}">{{product.price | currency}}</p>
             <p *ngIf="product.discount && product.discount.percent">{{product.discount.percent/100 * product.price | currency}}</p>
-            <p *ngIf="product.discount && product.discount.exact">{{product.discount.exact | currency}}</p>
+            <p *ngIf="product.discount && product.discount.exact">{{product.price - product.discount.exact | currency}}</p>
             <p>{{product.name}}</p>
             <p><button *ngIf="!isInCart(product)" (click)="addToCart(product)">Add to cart</button></p>
             <p><button *ngIf="isInCart(product)" (click)="deleteFromCart(product)">Remove from cart</button></p>
